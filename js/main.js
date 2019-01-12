@@ -1,9 +1,4 @@
 /* globals DBHelper */
-// let restaurants;
-// let neighborhoods;
-// let cuisines;
-// let newMap;
-// const markers = [];
 
 const state = {
   restaurants: undefined,
@@ -83,6 +78,9 @@ const createRestaurantHTML = (restaurant) => {
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   li.append(image);
 
+  // const restaurantMeta = document.createElement('div');
+  // restaurantMeta.className = 'restaurant-meta';
+
   const name = document.createElement('h1');
   name.innerHTML = restaurant.name;
   li.append(name);
@@ -100,6 +98,7 @@ const createRestaurantHTML = (restaurant) => {
   more.href = DBHelper.urlForRestaurant(restaurant);
   li.append(more);
 
+  // li.append(restaurantMeta);
   return li;
 };
 
