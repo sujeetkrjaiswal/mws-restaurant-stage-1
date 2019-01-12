@@ -1,0 +1,26 @@
+{
+  "name": "mws-restaurant-stage-1",
+  "version": "1.0.0",
+  "description": "--- #### _Three Stage Course Material Project - Restaurant Reviews_",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sujeetkrjaiswal/mws-restaurant-stage-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sujeetkrjaiswal/mws-restaurant-stage-1/issues"
+  },
+  "homepage": "https://github.com/sujeetkrjaiswal/mws-restaurant-stage-1#readme",
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "live-server": "^1.2.1"
+  }
+}
