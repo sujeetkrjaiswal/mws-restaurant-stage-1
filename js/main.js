@@ -73,10 +73,15 @@ const fetchCuisines = () => {
 const createRestaurantHTML = (restaurant) => {
   const li = document.createElement('li');
 
+  const imgContainer = document.createElement('div');
+  imgContainer.className = 'restaurant-img-container';
+
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
-  li.append(image);
+  imgContainer.append(image);
+
+  li.append(imgContainer);
 
   // const restaurantMeta = document.createElement('div');
   // restaurantMeta.className = 'restaurant-meta';
