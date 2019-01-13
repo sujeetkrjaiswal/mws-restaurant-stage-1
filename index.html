@@ -26,8 +26,15 @@
     </header>
 
     <main id="maincontent">
-      <section id="map-container"><div id="map"></div></section>
-      <section id="restaurants-container">
+      <section
+        id="map-container"
+        tabindex="0"
+        role="application"
+        aria-label="Location of Restaurants on Map"
+      >
+        <div id="map"></div>
+      </section>
+      <section id="restaurants-container" tabindex="0">
         <div class="filter-options">
           <h2>Filter Results</h2>
           <select
@@ -45,7 +52,10 @@
             <option value="all">All Cuisines</option>
           </select>
         </div>
-        <ul id="restaurants-list"></ul>
+        <ul id="restaurants-list" aria-label="Restaurant List"></ul>
+        <a href="#filter-options" class="hidden-element" tabindex="0"
+          >Back to top</a
+        >
       </section>
     </main>
 

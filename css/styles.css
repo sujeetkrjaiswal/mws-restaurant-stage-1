@@ -58,6 +58,12 @@ nav,
 section {
   display: block;
 }
+.hidden-element {
+  position: fixed;
+  top: -100000px;
+  left: -100000px;
+}
+
 #maincontent {
   background-color: #f3f3f3;
   /* min-height: 100%; */
@@ -357,6 +363,7 @@ nav h1 a {
   right: 0;
   top: 80px;
   width: 50%; */
+  /* order: -1; */
 }
 .inside #map {
   background-color: #ccc;
@@ -391,6 +398,7 @@ nav h1 a {
   left: 0;
   right: 0;
   width: 100%;
+  height: 100%;
 }
 #restaurant-img {
   width: 100%;

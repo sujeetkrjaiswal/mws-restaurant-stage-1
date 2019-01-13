@@ -72,19 +72,17 @@ const fetchCuisines = () => {
  */
 const createRestaurantHTML = (restaurant) => {
   const li = document.createElement('li');
-
+  li.setAttribute('tabindex', '0');
   const imgContainer = document.createElement('div');
   imgContainer.className = 'restaurant-img-container';
 
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.setAttribute('alt', restaurant.name);
   imgContainer.append(image);
 
   li.append(imgContainer);
-
-  // const restaurantMeta = document.createElement('div');
-  // restaurantMeta.className = 'restaurant-meta';
 
   const name = document.createElement('h1');
   name.innerHTML = restaurant.name;
@@ -103,7 +101,6 @@ const createRestaurantHTML = (restaurant) => {
   more.href = DBHelper.urlForRestaurant(restaurant);
   li.append(more);
 
-  // li.append(restaurantMeta);
   return li;
 };
 

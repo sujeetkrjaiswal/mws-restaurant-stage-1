@@ -1,3 +1,8 @@
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js').then(() => {
+    console.log('Service Worker Registerd');
+  });
+}
 /**
  * Common database helper functions.
  */
@@ -8,7 +13,7 @@ class DBHelper {
    */
   static get DATABASE_URL() {
     const port = 8080; // Change this to your server port
-    return `http://localhost:${port}/data/restaurants.json`;
+    return `${window.location.origin}/data/restaurants.json`;
   }
 
   /**
